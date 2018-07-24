@@ -1,10 +1,8 @@
 use core;
 
-#[lang = "panic_fmt"]
+#[panic_implementation]
 #[no_mangle]
-pub extern fn panic_fmt(_args: &core::fmt::Arguments,
-                    _file: &str,
-                    _line: u32) -> ! {
+pub extern fn panic_fmt(_: &core::panic::PanicInfo) -> ! {
     loop {}
 }
 

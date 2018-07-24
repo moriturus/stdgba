@@ -1,4 +1,4 @@
-#![feature(i128_type, asm, lang_items, core, core_intrinsics, const_fn, untagged_unions, arbitrary_self_types)]
+#![feature(i128_type, asm, lang_items, panic_implementation, core, core_intrinsics, const_fn, untagged_unions, arbitrary_self_types)]
 #![no_std]
 #![feature(use_extern_macros)]
 
